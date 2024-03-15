@@ -9,16 +9,23 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@directus/sdk": "^15.0.2",
+    "@stripe/stripe-js": "^3.0.7",
+    "dayjs": "^1.11.10",
+    "next": "^14.1.0",
     "react": "^18",
+    "react-datepicker": "^6.2.0",
     "react-dom": "^18",
-    "next": "14.1.0"
+    "stripe": "^14.20.0"
   },
   "devDependencies": {
-    "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^18",
+    "@types/react-datepicker": "^6.0.3",
     "@types/react-dom": "^18",
+    "@types/uuid": "^9.0.8",
     "eslint": "^8",
-    "eslint-config-next": "14.1.0"
+    "eslint-config-next": "14.1.0",
+    "typescript": "^5"
   }
 }
