@@ -1,7 +1,7 @@
 import directus from "./directus";
 import { readItems, createItem } from "@directus/sdk";
 
-type RoomData = {
+type ReservationData = {
   first_name: string;
   last_name: string;
   email: string;
@@ -92,11 +92,11 @@ export const getRoomTypes = async (
   }
 };
 
-export const makeReservation = async (roomData: RoomData) => {
+export const makeReservation = async (reservationData: ReservationData) => {
   try {
     const data = await directus.request(
       createItem("reservations", {
-        ...roomData,
+        ...reservationData,
       })
     );
     return "Booking Successful";

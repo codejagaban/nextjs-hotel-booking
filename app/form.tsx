@@ -32,11 +32,11 @@ export default function BookingForm() {
     }
   }
 
-  <input type="number" name="capacity" />;
   return (
     <form onSubmit={handleFormSubmit}>
       <div>
         <h2>Book an Hotel Room</h2>
+        <input type="number" name="capacity" />;
         <div>
           <div>
             <label htmlFor="checkInDate"> Check-in and Check-out Date:</label>
